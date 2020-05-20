@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>협성 H.S.Pay</title>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="./app.js"></script>
+</head>
+<body>
+ <div class="row">
+  <div class="container-fluid navbar navbar-light main">
+   <a href="/" class="navbar-brand">협성 H.S.Pay</a>
+   <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+     <li class="nav-item"><a href="list-item.html" class="nav-link btn list ">상품 추가하기</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="container-fluid">
+   <div class="col-sm-2 side-bar">
+    <h2>상품종류</h2>
+    <h4>필기구</h4>
+                  <h4>책</h4>
+                  <h4>미술용품</h4>
+                  <h4>그라찌에</h4>
+                  <h4>학식</h4>
+                  <h4>애드투페이</h4>
+                  <h4>안경점</h4>
+                  <h4>헬스장 이용권</h4>
+    <div id="categories">
+    </div>
+   </div>
+   <div class="col-sm-9">
+    <div class="row">
+     <h2 class="text-center">구매할 수 있는 상품</h2>
+     <div class="row" id="product-list">
+     </div>
+    </div>
+    <hr>
+    <div class="row">
+     <h2 class="text-center">구매된 상품 </h2>
+     <div class="row" id="product-purchased">
+     </div>
+    </div>
+    <hr>
+   </div>
+  </div>
+ </div>
+</body>
+</html>

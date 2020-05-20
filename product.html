@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>협성 H.S.Pay</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <div id="product-details-page" class="row">
+    <div class="container-fluid navbar navbar-light main">
+      <a href="/" class="navbar-brand">협성 H.S.Pay</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="list-item.html" class="nav-link btn list ">상품 품목</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div style="display: none;" class="alert alert-success text-center" id="msg"></div>
+    </div>
+    <div class="col-sm-12"><h1 class="text-center">상품상세설명</h1></div>
+    <div class="col-sm-12">
+      <h2 class="col-sm-6 col-sm-offset-3 text-center">
+        <div id="product-image"></div>
+        <div id="product-name"></div>
+        <div id="product-price"></div>
+        <div id="product-desc"></div>
+      </h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="product-details">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-6">
+            <form id="buy-now" class="col-sm-12">
+              <input type="hidden" name="product-id" id="product-id" />
+              <input type="hidden" name="buy-now-price" id="buy-now-price" />
+              <br>
+              <button type="submit" class="btn form-submit">구입</button>
+            </form>
+            <div id="escrow-info">
+              <div>구매자 - <span id="buyer"></span></div>
+              <div id="buyer"></div>
+              <div>판매자 - <span id="seller"></span></div>
+              <div id="seller"></div>
+              <div>중매자 - <span id="arbiter"></span></div>
+              <div id="arbiter"></div>
+              <div>구입 확정수: <span id="release-count"></span></div>
+              <div>환불 요청수: <span id="refund-count"></span></div>
+              <a id="release-funds" class="btn btn-primary form-submit">구입 확정</a>
+              <a id="refund-funds" class="btn btn-primary form-submit">환불 요청</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
