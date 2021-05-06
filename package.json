@@ -39,7 +39,7 @@
     "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
-    "json": "^9.0.6",
+    "json": "^10.0.0",
     "solc": "^0.4.23",
     "truffle-hdwallet-provider": "^1.0.17"
   }
